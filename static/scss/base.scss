@@ -122,13 +122,13 @@ a.postlink {
 .project-wrapper {
     float:left;
     margin-right: 80px;
-    /*margin-bottom: 40px;*/
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+    //margin-bottom: 80px;
     /*width: 200px;*/
     max-width: 300px;
     width: 100%;
-    //height: 360px;
-    height: 150px;
+    height: 360px;
+    //height: 150px;
     /*border: 1px solid black;*/
     /*padding: 20px;*/
     /*padding-bottom: 30px;*/
@@ -235,10 +235,55 @@ a.postlink {
 
 .documentation-wrapper {
     width: 100%;
+    max-width: 800px;
+    margin:auto;
     height: 100%;
     padding: 25px;
+    font-family: 'PT Sans', sans-serif;
+    @media screen and (max-width: 800px) {
+        max-width: 85%;
+        padding-left: 15px;
+        margin-left: 0px;
+    }
 }
 
 .doc-image {
-    max-width: 500px;
+    max-width: 100%;
+}
+.doc-image.small-doc-image {
+    max-width: 300px;
+    display:block;
+}
+.writeup-wrapper {
+    margin-top: 60px;
+}
+.doc-tags {
+    color: gray;
+}
+
+.documentation-footer {
+    border-top: 1px solid gray;
+    width: 100%;
+    padding-top: 30px;
+    margin-top: 100px;
+}
+
+.simple-title a {
+    color:black;
+    text-decoration: underline;
+}
+
+.simple-wrapper {
+    margin-top: 25px;
+}
+.simple-description {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.simple-list {
+    //margin-top: 20px;
+    max-width: 600px;
+}
+.here-are {
+    margin-top: 40px;
 }
