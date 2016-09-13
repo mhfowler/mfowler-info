@@ -1,7 +1,0 @@
-(function(){
-  document.write('<div id="adsatlas-3091090173" style="position:relative;width:300px;height:600px;overflow:hidden">');
-  document.write('<iframe src=\"https://ad.atdmt.com/as/direct;p=11237202246191;as=11237202249816;a=11237202249811;crs=11237202246200;cr=11237202249760;i.ts=1466044368/juan_300x600.html?click=https://www.googleadservices.com/pagead/aclk%3Fsa%3DL%26ai%3DCL8u6Bw9iV-X-MtO7nASFqZSgD_HKiPpE8PDZ57MCsLzn5ZwEEAEg8tL_CGDJ3o6LwKTYD6AB0vjL4gPIAQmoAwGqBJgBT9DvT0QNN1uDfr3At4r6If1IWmf5oX8bf6Ovb61aaFakAHKxm1vW1MXGddPWrkBmTaus7RckQtpYnI7VWxrSP3QuAVDpmdfppMbz_tCicmg0Hh7jfza2yvsytLFlUnw9vntb0ZW8yn_QQjAzb70EzTY-5nc4CnHUrvgofofLPKld-p_J2I5-RfN1k0OoPZ27w_ZgQuOAoD6IBgGgBhGAB8DOyiKoB6a-G9gHANgTAw%26num%3D1%26cid%3DCAASEuRoP7S3TRNg-NamPpp9sKhPyg%26sig%3DAOD64_3IwJus9oHeAVDLKh_3w-KhdHfVVw%26client%3Dca-pub-7691543043621777%26adurl%3D\" width=\"300\" height=\"600\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" topmargin=\"0\" leftmargin=\"0\" allowtransparency=\"true\"></iframe><img src=\"https://ad.atdmt.com/d/img;p=11237202246191;as=11237202249816;a=11237202249811;crs=11237202246200;cr=11237202249760\" />');
-  document.write('</div>');
-  document.write('');
-  document.close();
-})();
