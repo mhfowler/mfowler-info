@@ -1,0 +1,147 @@
+
+.card{
+	border-radius: 2px;
+	border: 2px transparent solid;
+	transition: all 0.2s;
+}
+.card a{
+	text-decoration: none;
+	outline:none;
+}
+
+.card a.main_link:hover h1{
+	/*
+	text-decoration: underline;
+	color: blue;*/
+}
+
+
+.card:hover {
+	border-color:  #0AC930 ;
+}
+.card:hover .links_bar{
+	opacity:1;
+	bottom:0px;
+}
+
+.links_bar{
+  transition: all 0.1s ease-out;
+  background: white;
+  opacity: 0;
+  position:absolute;
+  bottom:-50px;
+  left:0;
+  z-index: 3;
+  width: 100%;
+  /*  todo: shadow toward top. */
+  box-shadow: 0px 0 10px 3px #fff;
+}
+
+.links_bar a{
+  opacity:0.5;
+  color:#000;
+}
+.links_bar .fa{
+	font-size: 25px;
+line-height: 1em;
+margin-right: 10px;
+}
+
+.links_bar .social{
+	text-align:right;
+	padding-left: 5px;
+	padding-top:5px;
+}
+
+.links_bar a:hover{
+  opacity:1;
+}
+
+.vote{
+	border-radius: 0;
+	border-top-left-radius: 1px;
+	padding:5px 14px;
+	float:right;
+	background:#0AC930;
+	border-color: #0AC930;
+}
+.vote .fa{
+	font-size: 20px;
+line-height: 1em;
+margin: 0;
+margin-right: 5px;
+}
+.vote .count{
+	margin:0;
+	padding:0;
+	display:inline;
+}
+
+
+       #wrap .startup{
+         background:#fff;
+         padding:20px;
+         margin:10px;
+         width:380px;
+         height:260px;
+
+         display:block;
+         /* todo: clip desc content */
+         overflow:hidden;
+         text-overflow: ellipsis;
+         opacity:1;
+         position:relative;
+         /* to fix the lazy load */
+          display: inline-block;
+       }
+
+       img.lazy{
+        /*
+         opacity: 0;
+        transition: opacity 0s ease-in;*/
+       }
+
+         #wrap .startup:after { /* white fade: todo; disable on mobile.   */
+               display: block;
+               position: absolute;
+               right: 0;
+               bottom: 0;
+               height: 50px;
+               background: linear-gradient(left center, rgba(0, 255, 255, 0), #FFFFFF);
+               content: " ";
+               width: 100%;
+               background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+               	background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+               	background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+               	background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+               	background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+           }
+
+
+       #wrap .startup.people{height:150px;}
+       /*
+       #wrap .startup:hover{  }
+       #wrap .startup a{opacity:0.7; }*/
+
+
+       #wrap .startup h1{
+         margin-top:10px;
+         color:#444;
+         font-weight:600;
+         font-size:24px;
+       }
+       #wrap  .startup p {
+          text-overflow: clip;
+          text-overflow: ellipsis;
+          overflow:hidden;
+          color:#999;
+        }
+         #wrap .startup p strong {
+            padding-bottom:15px;
+
+          }
+       #wrap .startup img{ float:right; width:100px; height:100px; margin-left:20px;}
+       #wrap .startup.people img{ border-radius:100px; float:left;margin-left:0px;margin-right:20px; }
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- saved from url=(0686)https://ad.atdmt.com/as/direct;p=11237202246191;as=11237202249816;a=11237202249810;crs=11237202246463;cr=11237202249744;i.ts=1466044168/lisa_300x600.html?click=https://www.googleadservices.com/pagead/aclk%3Fsa%3DL%26ai%3DCL8u6Bw9iV-X-MtO7nASFqZSgD_HKiPpE8PDZ57MCsLzn5ZwEEAEg8tL_CGDJ3o6LwKTYD6AB0vjL4gPIAQmoAwGqBJgBT9DvT0QNN1uDfr3At4r6If1IWmf5oX8bf6Ovb61aaFakAHKxm1vW1MXGddPWrkBmTaus7RckQtpYnI7VWxrSP3QuAVDpmdfppMbz_tCicmg0Hh7jfza2yvsytLFlUnw9vntb0ZW8yn_QQjAzb70EzTY-5nc4CnHUrvgofofLPKld-p_J2I5-RfN1k0OoPZ27w_ZgQuOAoD6IBgGgBhGAB8DOyiKoB6a-G9gHANgTAw%26num%3D1%26cid%3DCAASEuRoP7S3TRNg-NamPpp9sKhPyg%26sig%3DAOD64_3IwJus9oHeAVDLKh_3w-KhdHfVVw%26client%3Dca-pub-7691543043621777%26adurl%3D -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>lisa_300x600</title>
+
+<script src="./easeljs-0.8.1.min.js"></script>
+<script src="./tweenjs-0.6.1.min.js"></script>
+<script src="./movieclip-0.8.1.min.js"></script>
+<script src="./preloadjs-0.6.1.min.js"></script>
+<script src="./lisa_300x600.js"></script>
+
+<script>
+var canvas, stage, exportRoot; 
+
+function init() {
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete(evt) {
+	exportRoot = new lib.lisa_300x600();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+	stage.enableMouseOver();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+</script>
+</head>
+
+<body onload="init();" style="background-color:#FFFFFF" marginwidth="0" marginheight="0">
+	<a href="https://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=CL8u6Bw9iV-X-MtO7nASFqZSgD_HKiPpE8PDZ57MCsLzn5ZwEEAEg8tL_CGDJ3o6LwKTYD6AB0vjL4gPIAQmoAwGqBJgBT9DvT0QNN1uDfr3At4r6If1IWmf5oX8bf6Ovb61aaFakAHKxm1vW1MXGddPWrkBmTaus7RckQtpYnI7VWxrSP3QuAVDpmdfppMbz_tCicmg0Hh7jfza2yvsytLFlUnw9vntb0ZW8yn_QQjAzb70EzTY-5nc4CnHUrvgofofLPKld-p_J2I5-RfN1k0OoPZ27w_ZgQuOAoD6IBgGgBhGAB8DOyiKoB6a-G9gHANgTAw&amp;num=1&amp;cid=CAASEuRoP7S3TRNg-NamPpp9sKhPyg&amp;sig=AOD64_3IwJus9oHeAVDLKh_3w-KhdHfVVw&amp;client=ca-pub-7691543043621777&amp;adurl=https://ad.atdmt.com/c/go;p=11237202246191;as=11237202249816;a=11237202249810;crs=11237202246463;cr=11237202249744;i.ts=1466044168" target="_blank">
+		<canvas id="canvas" width="300" height="600" style="background-color:#FFFFFF"></canvas>
+	</a>
+
+</body></html>
