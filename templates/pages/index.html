@@ -8,71 +8,77 @@
 </div>
 <div class="projects-list">
 
-    <div class="list-of-projects">
-        <div class="project-wrapper">
-            <div class="project-title">
-                <a href="http://oasisvr.info/">oasis</a>
-            </div>
-            <div class="project-description">
-                a virtual reality commune only acessible by SSH
-            </div>
-        </div>
-        <div class="project-wrapper">
-            <div class="project-title">
-                <a href="/2pots.html">2 pots</a>
-            </div>
-            <div class="project-description">
-                a series of generative lines drawings exploring controlled noise
-            </div>
-        </div>
-        <div class="project-wrapper">
-            <div class="project-title">
-                <a href="http://abridgedmaps.com/">abridgedmaps.com</a>
-            </div>
-            <div class="project-description">
-                a website that strips Google Maps of all natural imagery to reveal concrete poems about the structure of contemporary space
-            </div>
-        </div>
-        <div class="project-wrapper">
-            <div class="project-title">
-                <a href="http://brocascoconut.com/truespeak/">truespeak</a>
-            </div>
-            <div class="project-description">
-                a thought experiment and functional app that allows you to upload conversations from your text message history to a publicly viewable page on the internet
-            </div>
-        </div>
-        <div class="project-wrapper">
-            <div class="project-title">
-                <a href="http://howdoispeak.com">howdoispeak</a>
-            </div>
-            <div class="project-description">
-                a website which shows you insights about the way you text by analyzing the frequency of your word usage in your text messages over time
-            </div>
-        </div>
-        <div class="project-wrapper">
-            <div class="project-title">
-                <a href="http://brocascoconut.com/the_capitalist_tshirt/">the capitalist t-shirt</a>
-            </div>
-            <div class="project-description">
-                an e-commerce store which sells t-shirts, framed prints and booty shorts
-            </div>
-        </div>
-        <div class="project-wrapper">
-            <div class="project-title">
-                <a href="http://brocascoconut.com">brocascoconut.com</a>
-            </div>
-            <div class="project-description">
-                the landing page for a pseudo-anonymous art collective mailing list curated by me and some of my friends
-            </div>
-        </div>
-        <div class="project-wrapper">
-            <div class="project-title">
-                <a href="http://mhfowler.github.io">css sketchbook</a>
-            </div>
-            <div class="project-description">
-                a working sketchbook I've been using to work through the exercises in the book "The Secrets Of CSS"
-            </div>
-        </div>
+    {% with %}
+    {% set project_title="Oasis" %}
+    {% set project_image="/static/img/oasis.jpg" %}
+    {% set project_snippet="a virtual reality commune only accessible by SSH" %}
+    {% set project_tags="installation, website, raspberry pi" %}
+    {% set project_link="http://oasisvr.info" %}
+    {% include "snippets/project.html" %}
+    {% endwith %}
 
-    </div>
-    {% endblock %}
+    {% with %}
+    {% set project_title="Abridged Maps" %}
+    {% set project_image="/static/img/abridged.png" %}
+    {% set project_snippet="a twitter bot that strips Google Maps of all natural imagery to reveal concrete poems about the structure of contemporary space" %}
+    {% set project_tags="website, twitter bot" %}
+    {% set project_link="http://abridgedmaps.com" %}
+    {% include "snippets/project.html" %}
+    {% endwith %}
+
+    {% with %}
+    {% set project_title="2 Pots" %}
+    {% set project_image="/static/img/lamp.jpg" %}
+    {% set project_snippet="a series of generative line drawings exploring controlled noise" %}
+    {% set project_tags="installation, open frameworks, arduino" %}
+    {% set project_link="/2pots.html" %}
+    {% include "snippets/project.html" %}
+    {% endwith %}
+
+    {% with %}
+    {% set project_title="HowDoISpeak" %}
+    {% set project_snippet="a website which shows you insights about the way you text by analyzing the frequency of your word usage in your text messages over time" %}
+    {% set project_tags="website" %}
+    {% set project_image="/static/img/hdis.png" %}
+    {% set project_link="http://howdoispeak.com" %}
+    {% include "snippets/project.html" %}
+    {% endwith %}
+
+    {% with %}
+    {% set project_title="TrueSpeak" %}
+    {% set project_snippet="a thought experiment and functional app that allows you to upload conversations from your text message history to a publicly viewable page on the internet" %}
+    {% set project_tags="website" %}
+    {% set project_image="/static/img/truespeak.png" %}
+    {% set project_link="http://brocascoconut.com/truespeak/" %}
+    {% include "snippets/project.html" %}
+    {% endwith %}
+
+    {% with %}
+    {% set project_title="The Capitalist T-Shirt" %}
+    {% set project_snippet="an e-commerce store which sells t-shirts, framed prints and booty shorts" %}
+    {% set project_tags="website" %}
+    {% set project_image="/static/img/capitalist.png" %}
+    {% set project_link="http://brocascoconut.com/the_capitalist_tshirt/" %}
+    {% include "snippets/project.html" %}
+    {% endwith %}
+
+    {% with %}
+    {% set project_title="Broca's Coconut" %}
+    {% set project_snippet="the landing page for a pseudo-anonymous mailing list" %}
+    {% set project_tags="website" %}
+    {% set project_image="/static/img/brocas.png" %}
+    {% set project_link="http://brocascoconut.com/" %}
+    {% include "snippets/project.html" %}
+    {% endwith %}
+
+    {% with %}
+    {% set project_title="CSS Sketchbook" %}
+    {% set project_snippet="experiments in css" %}
+    {% set project_tags="website" %}
+    {% set project_image="/static/img/table.jpg" %}
+    {% set project_link="http://mhfowler.github.io" %}
+    {% include "snippets/project.html" %}
+    {% endwith %}
+
+</div>
+{% endblock %}

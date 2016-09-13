@@ -5,10 +5,20 @@
 
 <div class="documentation-wrapper">
 
+    <a href="/portfolio.html" class="back-button">
+        home
+    </a>
 
-    {% block content %}
 
-    {% endblock %}
+    <div class="writeup-wrapper">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+    <div class="documentation-footer">
+       {% include "snippets/navlinks.html" %}
+    </div>
 
 </div>
 
