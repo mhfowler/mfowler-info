@@ -37,3 +37,4 @@ npm install
 - create layouts in `templates/layouts` which your pages use 
 - write css in `static`
 # westbeth
+# mfowler-info
