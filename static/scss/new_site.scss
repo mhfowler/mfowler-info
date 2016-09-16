@@ -1,4 +1,10 @@
-
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
 
 
 
@@ -89,4 +95,8 @@ body, html {
 .navlink {
   float:left;
   margin-right: 5px;
+}
+
+.navlinks {
+  @include clearfix();
 }
