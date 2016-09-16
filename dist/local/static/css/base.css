@@ -168,8 +168,9 @@ a.postlink {
 .about-wrapper {
   margin-top: 60px; }
 
-.about-wrapper p {
-  max-width: 600px; }
+.about-writeup {
+  float: left;
+  max-width: 500px; }
 
 .portfolio-item {
   border: 1px solid black;
