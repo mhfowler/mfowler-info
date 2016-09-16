@@ -1,21 +1,12 @@
 {% extends "layouts/page.html" %}
 {% block content %}
 <!--<div class="about-line">-->
-    <!--Max Fowler codes, makes generative art, speculative startups, twitter bots and vaporware.-->
-    <!--Currently based in Brooklyn and available for contracting.-->
-    <!--Read his <a href="/about.html">bio</a>, see his <a href="/portfolio.html">portfolio</a>-->
-    <!--or <a href="mailto:maxhfowler@gmail.com">send him an email</a>.-->
+<!--Max Fowler codes, makes generative art, speculative startups, twitter bots and vaporware.-->
+<!--Currently based in Brooklyn and available for contracting.-->
+<!--Read his <a href="/about.html">bio</a>, see his <a href="/portfolio.html">portfolio</a>-->
+<!--or <a href="mailto:maxhfowler@gmail.com">send him an email</a>.-->
 <!--</div>-->
 <div class="projects-list">
-
-    {% with %}
-    {% set project_title="Oasis" %}
-    {% set project_image="/static/img/oasis.jpg" %}
-    {% set project_snippet="a virtual reality commune only accessible by SSH" %}
-    {% set project_tags="installation, website, raspberry pi" %}
-    {% set project_link="http://oasisvr.info" %}
-    {% include "snippets/project.html" %}
-    {% endwith %}
 
     {% with %}
     {% set project_title="Abridged Maps" %}
@@ -41,6 +32,15 @@
     {% set project_tags="website" %}
     {% set project_image="/static/img/hdis.png" %}
     {% set project_link="http://howdoispeak.com" %}
+    {% include "snippets/project.html" %}
+    {% endwith %}
+
+    {% with %}
+    {% set project_title="Oasis" %}
+    {% set project_image="/static/img/oasis.jpg" %}
+    {% set project_snippet="a virtual reality commune only accessible by SSH" %}
+    {% set project_tags="installation, website, raspberry pi" %}
+    {% set project_link="http://oasisvr.info" %}
     {% include "snippets/project.html" %}
     {% endwith %}
 
