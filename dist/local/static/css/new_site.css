@@ -58,3 +58,8 @@ body, html {
 .navlink {
   float: left;
   margin-right: 5px; }
+
+.navlinks:after {
+  content: "";
+  display: table;
+  clear: both; }
