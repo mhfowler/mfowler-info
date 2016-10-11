@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "snippets/head.html" %}
+<body class="base-body blog-body">
+
+{% include "snippets/header.html" %}
+
+<div class="blog-sidebar">
+    <div class="sidebar-links-wrapper">
+
+
+        <a href="/wayback.html" class="sidelink">wayback</a>
+
+        <a href="/poetics_of_space.html" class="sidelink">poetics</a>
+
+        <a href="http://mhfowler.github.io/westbeth-processing/sketches/vera1/vera1.html" class="sidelink">start typing</a>
+
+        <a href="/upstart.html" class="sidelink">upstart</a>
+
+        <a href="/goodmorning.html" class="sidelink">goodmorning</a>
+
+    </div>
+
+</div>
+
+<div class="documentation-wrapper">
+
+    <a href="/" class="back-button">
+        home
+    </a>
+
+
+    <div class="writeup-wrapper">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+    <div class="documentation-footer">
+        {% include "snippets/navlinks.html" %}
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

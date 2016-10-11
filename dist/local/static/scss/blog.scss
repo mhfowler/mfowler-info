@@ -1,0 +1,122 @@
+body.blog-body {
+    padding: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+    @media screen and (max-width: 550px) {
+
+        padding-left: 0px;
+    }
+
+    .doc-image {
+        width: 100%;
+    }
+
+    .blog-footer {
+        width: 94%;
+        border-top: 1px solid gray;
+        margin-top: 50px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        @media screen and (max-width: 550px) {
+            padding-left: 5%;
+        }
+        a {
+            color: black;
+        }
+    }
+
+    .sidebar {
+        float:left;
+        width: 80px;
+        margin-left: 40px;
+        @media screen and (max-width: 550px) {
+            display:none;
+        }
+    }
+
+    .main-section {
+        float:left;
+        margin-left: 100px;
+        max-width: 800px;
+        width: 60%;
+        @media screen and (max-width: 550px) {
+            margin-left: 0px;
+            padding-left: 5%;
+            width: 95%;
+        }
+    }
+
+    .page-wrapper:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .page-wrapper {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .blog-header {
+        margin-left: 40px;
+        margin-bottom: 40px;
+        @media screen and (max-width: 550px) {
+            margin-left: 5%;
+        }
+        a {
+            color: black;
+            //color: #6801c1;
+        }
+    }
+
+    a.sidelink {
+        width: 100%;
+        display:block;
+        color:black;
+    }
+
+    .blog-post {
+        margin-bottom: 100px;
+    }
+
+    .blog-post-title {
+        margin-top: 0px;
+    }
+
+    img {
+        width: 400px;
+        max-width: 100%;
+    }
+
+    a {
+        /*color: black;*/
+        //color: #9500ff;
+                  color: #6801c1;
+        text-decoration:none;
+    }
+
+    h2 a {
+        color: #00119c
+    }
+
+
+    //.blog-header a {
+    //    color: black;
+    //}
+
+    .navlink {
+        float:left;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    .navlink a {
+        color:black;
+    }
+
+}
+
+
+
