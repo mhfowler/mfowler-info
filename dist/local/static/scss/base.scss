@@ -7,10 +7,12 @@
 }
 
 
-body.blog-body {
-    .documentation-wrapper {
-        float:left;
-        font-family: "Times New Roman";
+body.new-blog-body {
+    .blog-post-title {
+        color: #6801c1;
+    }
+    .doc-wrapper {
+        max-width: 550px;
     }
 }
 

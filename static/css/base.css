@@ -1,6 +1,8 @@
-body.blog-body .documentation-wrapper {
-  float: left;
-  font-family: "Times New Roman"; }
+body.new-blog-body .blog-post-title {
+  color: #6801c1; }
+
+body.new-blog-body .doc-wrapper {
+  max-width: 550px; }
 
 body.base-body {
   padding-bottom: 50px;
