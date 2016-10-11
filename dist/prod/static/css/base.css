@@ -1,6 +1,5 @@
 body.blog-body .documentation-wrapper {
-  float: left;
-  font-family: "Times New Roman"; }
+  float: left; }
 
 body.base-body {
   padding-bottom: 50px;
@@ -193,8 +192,6 @@ body.base-body {
         max-width: 85%;
         padding-left: 15px;
         margin-left: 0px; } }
-  body.base-body .documentation-wrapper.blog-wrapper {
-    font-family: "Times New Roman"; }
   body.base-body .doc-image {
     width: 100%;
     max-width: 100%; }
