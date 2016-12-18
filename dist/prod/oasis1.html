@@ -1,5 +1,48 @@
-{% extends "layouts/documentation.html" %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mfowler.info</title>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/blog.css">
+    <link rel="icon" href="/static/img/favico.ico" type="image/x-icon"/>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+    <style>
+
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-57781529-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <meta name="description" content="Max Fowler | Freelancer">
+    <meta name="author" content="Max Fowler">
+    <title>mfowler.info</title>
+</head>
+<body class="base-body">
+
+<div class="documentation-wrapper">
+
+    <a href="/" class="back-button">
+        home
+    </a>
+
+
+    <div class="writeup-wrapper">
+        
 
 <div class="doc-wrapper" style="max-width:550px;">
 
@@ -22,8 +65,8 @@
         I also created a physical installation allowing visitors to explore Oasis directly through a screen and keyboard.
     </p>
 
-    <!--<img class="doc-image" src="/static/img/radnets/radnets1.JPG" style="max-width: 400px;"/>-->
-    <img class="doc-image" src="/static/img/radnets/radnets/rain.JPG" style="max-width: 400px;"/>
+    <img class="doc-image small-doc-image" src="/static/img/oasis/oasis.jpg" style="max-width: 400px;"/>
+    <!--<img class="doc-image" src="/static/img/radnets/radnets/rain.JPG" style="max-width: 400px;"/>-->
 
     <p>
         On Oasis there are folders (like any other file system), but instead of "Pictures", "Work", "Memes",
@@ -52,21 +95,9 @@
     <!--<div style="margin-top: 30px; margin-bottom: 10px;">-->
         <!--<strong>SFPC</strong>-->
     <!--</div>-->
-    <!--<img class="doc-image" src="/static/img/radnets/sfpc1.png" style="max-width: 400px;"/>-->
-    <!--<img class="doc-image" src="/static/img/oasis/oasis2.jpg" style="max-width: 400px;"/>-->
-    <!--<img class="doc-image" src="/static/img/oasis/min.jpg" style="max-width: 400px;"/>-->
-
-    <!--<img class="doc-image" src="/static/img/radnets/radnets2.JPG" style="max-width: 400px;"/>-->
-    <div style="margin-top: 30px; margin-bottom: 10px;">
-        <strong>Photos From Radical Networks</strong>
-    </div>
-    <p style="font-size: 10px; margin: 0px; padding-top: 5px; padding-bottom: 15px; color: gray;">
-        The first photo was taken by Philippe Safire
-    </p>
-    <img class="doc-image" src="/static/img/radnets/radnets/Philippe_Safire_RadNetz2.JPG" style="max-width: 400px;"/>
-    <img class="doc-image" src="/static/img/radnets/radnets2.JPG" style="max-width: 400px;"/>
-    <img class="doc-image" src="/static/img/radnets/radnets/closeup.JPG" style="max-width: 400px;"/>
-
+    <img class="doc-image" src="/static/img/radnets/sfpc1.png" style="max-width: 400px;"/>
+    <img class="doc-image" src="/static/img/oasis/oasis2.jpg" style="max-width: 400px;"/>
+    <img class="doc-image" src="/static/img/oasis/min.jpg" style="max-width: 400px;"/>
 
     <p>
         In the past whenever I would use SSH to work on a remote
@@ -85,4 +116,40 @@
 </div>
 
 
-{% endblock %}
+
+    </div>
+
+    <div class="documentation-footer">
+       <!--<div class="navlink">-->
+    <!--<a href="/about.html">about</a>-->
+<!--</div>-->
+<!--<div class="navlink">-->
+    <!--<a href="/">projects</a>-->
+<!--</div>-->
+
+<div class="navlink">
+    <a href="/about.html">about</a>
+</div>
+<div class="navlink">
+    <a href="/">projects</a>
+</div>
+<div class="navlink">
+    <a href="http://twitter.com/notplants">twitter</a>
+</div>
+<div class="navlink">
+    <a href="http://github.com/mhfowler">github</a>
+</div>
+<div class="navlink">
+    <a href="/notes.html">notes</a>
+</div>
+<div class="navlink">
+    <a href="mailto:maxhfowler@gmail.com">contact</a>
+</div>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
