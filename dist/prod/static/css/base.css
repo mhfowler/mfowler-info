@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'resistanceregular';
+  src: url("/static/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.eot");
+  src: url("/static/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.eot?#iefix") format("embedded-opentype"), url("/static/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.woff2") format("woff2"), url("/static/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.woff") format("woff"), url("/static/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bluu';
+  src: url("/static/BluuNext-master/fonts/webfonts/bluunext-bold-webfont.woff2") format("woff2"), url("/static/BluuNext-master/fonts/webfonts/bluunext-bold-webfont.woff") format("woff"), url("/static/BluuNext-master/fonts/webfonts/bluunext-bold.ttf") format("truetype"), url("/static/BluuNext-master/fonts/webfonts/bluunext-bold-webfont.svg#bluu_nextbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 body.new-blog-body .blog-post-title {
   color: #6801c1; }
 
@@ -97,7 +110,7 @@ body.base-body {
   body.base-body .project-wrapper {
     float: left;
     margin-right: 80px;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     /*width: 200px;*/
     max-width: 300px;
     width: 100%;
@@ -224,3 +237,6 @@ body.base-body {
     max-width: 600px; }
   body.base-body .here-are {
     margin-top: 40px; }
+
+.looking-glass .doc-image {
+  max-width: 450px; }

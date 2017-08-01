@@ -6,6 +6,41 @@
     }
 }
 
+@font-face {
+    font-family: 'resistanceregular';
+    src: url('/static/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.eot');
+    src: url('/static/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.woff2') format('woff2'),
+         url('/static/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.woff') format('woff'),
+         url('/static/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bluu';
+    src: url('/static/BluuNext-master/fonts/webfonts/bluunext-bold-webfont.woff2') format('woff2'),
+         url('/static/BluuNext-master/fonts/webfonts/bluunext-bold-webfont.woff') format('woff'),
+         url('/static/BluuNext-master/fonts/webfonts/bluunext-bold.ttf') format('truetype'),
+         url('/static/BluuNext-master/fonts/webfonts/bluunext-bold-webfont.svg#bluu_nextbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+//body {
+//    font-family: "bluu";
+//    //background-color: #80ccf0;
+//}
+//p {
+//    font-family: "bluu";
+//}
+//a {
+//    font-family: "bluu";
+//}
+//h2 {
+//    font-family: "bluu";
+//}
 
 body.new-blog-body {
     .blog-post-title {
@@ -75,6 +110,7 @@ body.base-body {
     }
     .myname a {
         color:black;
+        //font-size: 28px;
     }
 
     a:hover {
@@ -148,7 +184,8 @@ body.base-body {
     .project-wrapper {
         float:left;
         margin-right: 80px;
-        margin-bottom: 40px;
+        //margin-bottom: 40px;
+        margin-bottom: 70px;
         //margin-bottom: 80px;
         /*width: 200px;*/
         max-width: 300px;
@@ -324,5 +361,11 @@ body.base-body {
         margin-top: 40px;
     }
 
+}
+
+.looking-glass {
+    .doc-image {
+        max-width: 450px;
+    }
 }
 

@@ -31,6 +31,15 @@
 <div class="projects-list">
 
     {% with %}
+    {% set project_title="Looking Glass" %}
+    {% set project_image="/static/img/looking-glass/looking-glass.png" %}
+    {% set project_snippet="a projection onto a broken mirror" %}
+    {% set project_tags="installation, projection mapping" %}
+    {% set project_link="/looking-glass.html" %}
+    {% include "snippets/project.html" %}
+    {% endwith %}
+
+    {% with %}
     {% set project_title="Abridged Maps" %}
     {% set project_image="/static/img/abridged.png" %}
     {% set project_snippet="a twitter bot that strips Google Maps of all natural imagery to reveal concrete poems about the structure of contemporary space" %}
@@ -49,6 +58,15 @@
     {% endwith %}
 
     {% with %}
+    {% set project_title="Memory Prosthetics" %}
+    {% set project_image="/static/img/floppy_disk.jpg" %}
+    {% set project_snippet="a collection of responses to the question what systems and thought-processes do you use to store & organize files/links/media?" %}
+    {% set project_tags="website" %}
+    {% set project_link="http://memoryprosthetics.net" %}
+    {% include "snippets/project.html" %}
+    {% endwith %}
+
+    {% with %}
     {% set project_title="HowDoISpeak" %}
     {% set project_snippet="a website which shows you insights about the way you text by analyzing the frequency of your word usage in your text messages over time" %}
     {% set project_tags="website" %}
@@ -62,7 +80,7 @@
     {% set project_image="/static/img/oasis.jpg" %}
     {% set project_snippet="a virtual reality commune only accessible by SSH" %}
     {% set project_tags="installation, website, raspberry pi" %}
-    {% set project_link="http://oasisvr.info" %}
+    {% set project_link="/oasis.html" %}
     {% include "snippets/project.html" %}
     {% endwith %}
 
