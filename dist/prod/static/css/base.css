@@ -11,6 +11,31 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Quadraat';
+  src: url("/static/quadraat/Quadraat.eot");
+  src: url("/static/quadraat/Quadraat.eot?#iefix") format("embedded-opentype"), url("/static/quadraat/Quadraat.woff") format("woff"), url("/static/quadraat/Quadraat.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Quadraat Sans';
+  src: url("/static/quadraat/Quadraat-sans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Quadraat Sans Demibold';
+  src: url("/static/quadraat/Quadraatsanspro-demibold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Quadraat Sans Light';
+  src: url("/static/quadraat/Quadraatsanspro-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 body.new-blog-body .blog-post-title {
   color: #6801c1; }
 
@@ -151,7 +176,7 @@ body.base-body {
       body.base-body .portfolio-description {
         padding-left: 5px; } }
   body.base-body .project-title {
-    font-size: 24px;
+    font-size: 22px;
     color: black; }
   body.base-body .portfolio-title {
     color: black;
