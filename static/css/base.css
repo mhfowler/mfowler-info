@@ -36,8 +36,21 @@
   font-weight: normal;
   font-style: normal; }
 
+#sketch-holder {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; }
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #d9e2d4;
+  font-size: 12px; }
+
 .dropline {
-  background-image: url(/static/img/dropline-test.svg);
   background-size: 332px 150px;
   background-position: 44px;
   background-repeat: no-repeat;
@@ -46,9 +59,8 @@
   margin: auto; }
 
 .navbar {
-  text-align: center; }
+  font-size: 12px; }
   .navbar .navlinks {
-    margin: auto;
     width: 400px; }
 
 body.new-blog-body .blog-post-title {
@@ -153,10 +165,10 @@ body.base-body {
     max-width: 700px; }
   body.base-body .project-wrapper {
     float: left;
-    margin-right: 80px;
+    margin-right: 120px;
     margin-bottom: 70px;
     /*width: 200px;*/
-    max-width: 300px;
+    max-width: 200px;
     width: 100%;
     height: 360px;
     /*border: 1px solid black;*/
@@ -170,7 +182,7 @@ body.base-body {
     /*box-shadow: 5px;*/ }
   body.base-body .project-image {
     height: 200px;
-    width: 300px;
+    width: 200px;
     background-size: cover;
     max-width: 95%; }
   body.base-body .portfolio-image-wrapper {
@@ -195,13 +207,14 @@ body.base-body {
       body.base-body .portfolio-description {
         padding-left: 5px; } }
   body.base-body .project-title {
-    font-size: 22px;
+    font-size: 12px;
     color: black; }
   body.base-body .portfolio-title {
     color: black;
     font-size: 24px; }
   body.base-body .project-snippet {
-    margin-top: 10px; }
+    margin-top: 10px;
+    display: none; }
   body.base-body .project-tags {
     color: gray;
     margin-top: 10px; }
@@ -233,13 +246,17 @@ body.base-body {
         width: 550px; } }
   body.base-body .portfolio-tags {
     color: gray;
-    margin-top: 5px; }
+    margin-top: 5px;
+    display: none; }
   body.base-body .author {
     color: gray; }
   body.base-body .project-description {
     margin-top: 10px; }
   body.base-body .projects-wrapper {
-    max-width: 1000px; }
+    margin-top: 60px;
+    max-width: 1000px;
+    float: left;
+    width: 1000px; }
   body.base-body .documentation-wrapper {
     width: 100%;
     max-width: 800px;
