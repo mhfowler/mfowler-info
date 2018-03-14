@@ -85,6 +85,17 @@ h2 {
     //font-family: "resistanceregular";
 }
 
+a.timeline-row {
+    display: block;
+    color: black;
+    &:visited {
+        color: black;
+    }
+    &:hover {
+        color: darkgray;
+    }
+}
+
 .dropline {
     //background-image: url(/static/img/dropline-test.svg);
     background-size: 332px 150px;

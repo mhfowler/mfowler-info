@@ -50,6 +50,14 @@ body {
   background-color: #d9e2d4;
   font-size: 12px; }
 
+a.timeline-row {
+  display: block;
+  color: black; }
+  a.timeline-row:visited {
+    color: black; }
+  a.timeline-row:hover {
+    color: darkgray; }
+
 .dropline {
   background-size: 332px 150px;
   background-position: 44px;
