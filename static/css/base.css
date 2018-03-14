@@ -59,7 +59,9 @@ body {
   margin: auto; }
 
 .navbar {
-  font-size: 12px; }
+  text-align: center;
+  font-size: 12px;
+  width: 280px; }
   .navbar .navlinks {
     width: 400px; }
 
@@ -166,7 +168,7 @@ body.base-body {
   body.base-body .project-wrapper {
     float: left;
     margin-right: 120px;
-    margin-bottom: 70px;
+    margin-bottom: 0px;
     /*width: 200px;*/
     max-width: 200px;
     width: 100%;

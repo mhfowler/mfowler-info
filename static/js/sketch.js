@@ -21,4 +21,7 @@ function draw() {
 
   var xPos2 = window.outerWidth - 100;
   line(xPos2, 0, xPos2 + randInt(-20, 20), randInt(0, window.outerHeight*4));
+
+    var xPos3 = window.outerWidth - 180;
+  line(xPos3, 0, xPos3 + randInt(-20, 20), randInt(0, window.outerHeight*4));
 }
