@@ -48,8 +48,11 @@
 body {
   font-family: 'Roboto Mono', monospace;
   font-size: 12px;
-  background-image: url("https://78.media.tumblr.com/37816081fb4c15e85596ed7931c6d2e0/tumblr_n6awg7ky2K1tw598eo1_500.jpg");
+  background-image: url("/static/img/diamond.gif");
   background-size: cover; }
+
+.overlaid {
+  background-color: white; }
 
 a.timeline-row {
   display: block;
@@ -69,7 +72,7 @@ a.timeline-row {
 
 .navbar {
   font-size: 12px;
-  width: 280px; }
+  width: 367px; }
   .navbar .navlinks {
     width: 400px; }
 
@@ -178,7 +181,8 @@ body.base-body {
     float: left;
     margin-right: 120px;
     width: 200px;
-    height: 425px;
+    height: 350px;
+    margin-bottom: 75px;
     /*border: 1px solid black;*/
     /*padding: 20px;*/
     /*padding-bottom: 30px;*/ }
