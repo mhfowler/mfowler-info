@@ -47,7 +47,9 @@
 
 body {
   font-family: 'Roboto Mono', monospace;
-  font-size: 12px; }
+  font-size: 12px;
+  background-image: url("https://78.media.tumblr.com/37816081fb4c15e85596ed7931c6d2e0/tumblr_n6awg7ky2K1tw598eo1_500.jpg");
+  background-size: cover; }
 
 a.timeline-row {
   display: block;
