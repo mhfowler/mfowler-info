@@ -72,7 +72,11 @@
 body {
     //font-family: "resistanceregular";
     font-family: 'Roboto Mono', monospace;
-    background-color: #d9e2d4;
+    //background-color: #d9e2d4;
+    background-color: #efefef;
+    // #d9e2d4 light green
+    // #8cccb1 turqoise
+    // #efefef gray
     font-size: 12px;
 }
 p {
@@ -267,7 +271,7 @@ body.base-body {
         float:left;
         margin-right: 120px;
         //margin-bottom: 40px;
-        margin-bottom: 0px;
+        margin-bottom: 80px;
         //margin-bottom: 80px;
         /*width: 200px;*/
         max-width: 200px;
@@ -291,7 +295,8 @@ body.base-body {
         height: 200px;
         width: 200px;
         background-size: cover;
-        max-width: 95%;
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+        transition: all 0.4s;
     }
     .portfolio-image-wrapper {
         /*padding: 5px;*/
@@ -330,7 +335,7 @@ body.base-body {
 
     .project-snippet {
         margin-top: 10px;
-        display: none;
+        //display: none;
     }
     .project-tags {
         color:gray;
@@ -379,7 +384,7 @@ body.base-body {
     }
 
     .project-description {
-        margin-top: 10px;
+        margin-top: 15px;
         //display: none;
     }
 
