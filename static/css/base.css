@@ -62,7 +62,7 @@ a.timeline-row {
   background-position: 44px;
   background-repeat: no-repeat;
   width: 400px;
-  height: 100px;
+  height: 50px;
   margin: auto; }
 
 .navbar {
@@ -98,7 +98,8 @@ body.base-body {
   body.base-body .page-wrapper {
     margin-left: 10%;
     margin-top: 0px;
-    width: 600px; }
+    max-width: 1000px;
+    width: 100%; }
     @media screen and (max-width: 575px) {
       body.base-body .page-wrapper {
         margin-left: 10px; } }
@@ -175,7 +176,7 @@ body.base-body {
     float: left;
     margin-right: 120px;
     width: 200px;
-    height: 375px;
+    height: 425px;
     /*border: 1px solid black;*/
     /*padding: 20px;*/
     /*padding-bottom: 30px;*/ }
@@ -258,9 +259,8 @@ body.base-body {
     margin-top: 15px; }
   body.base-body .projects-wrapper {
     margin-top: 60px;
-    max-width: 1000px;
     float: left;
-    width: 1000px; }
+    width: 100%; }
   body.base-body .documentation-wrapper {
     width: 100%;
     max-width: 800px;
