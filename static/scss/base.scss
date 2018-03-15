@@ -73,7 +73,7 @@ body {
     //font-family: "resistanceregular";
     font-family: 'Roboto Mono', monospace;
     //background-color: #d9e2d4;
-    background-color: #efefef;
+    //background-color: #efefef;
     // #d9e2d4 light green
     // #8cccb1 turqoise
     // #efefef gray
@@ -273,8 +273,8 @@ body.base-body {
         //margin-bottom: 40px;
         //margin-bottom: 80px;
         //margin-bottom: 80px;
-        /*width: 200px;*/
-        width: 100%;
+        width: 200px;
+        //width: 100%;
         //height: 220px;
         height: 375px;
         //height: 150px;
@@ -295,7 +295,7 @@ body.base-body {
         height: 200px;
         width: 200px;
         background-size: cover;
-        box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+        //box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
         transition: all 0.4s;
         //display:none;
     }
@@ -393,6 +393,7 @@ body.base-body {
         margin-top: 60px;
         max-width:1000px;
         float:left;
+        width: 1000px;
     }
 
     .documentation-wrapper {
