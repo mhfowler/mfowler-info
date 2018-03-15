@@ -175,11 +175,9 @@ body.base-body {
   body.base-body .project-wrapper {
     float: left;
     margin-right: 120px;
-    margin-bottom: 80px;
     /*width: 200px;*/
-    max-width: 200px;
     width: 100%;
-    height: 360px;
+    height: 375px;
     /*border: 1px solid black;*/
     /*padding: 20px;*/
     /*padding-bottom: 30px;*/ }
@@ -264,8 +262,7 @@ body.base-body {
   body.base-body .projects-wrapper {
     margin-top: 60px;
     max-width: 1000px;
-    float: left;
-    width: 1000px; }
+    float: left; }
   body.base-body .documentation-wrapper {
     width: 100%;
     max-width: 800px;
