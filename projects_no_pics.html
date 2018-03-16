@@ -16,6 +16,13 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
 
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+
+    <script src="/static/js/panel.js"></script>
+
 
         <style type="text/css">
     @font-face {
@@ -91,12 +98,18 @@
 
     <div class="content-wrapper">
         
-<div class="about-line">
-    Max Fowler codes, makes generative art, speculative startups, twitter bots and vaporware.
-    Currently based in Brooklyn and available for contracting.
-    Read his <a href="/about.html">bio</a>, see his <a href="/portfolio.html">portfolio</a>
-    or <a href="mailto:maxhfowler@gmail.com">send him an email</a>.
+<div class="about-line" style="margin-top: 20px;">
+    Max Fowler is an artist and programmer living in Brooklyn
+    who makes websites, interactive installations and open source software.
+    Read his <a href="/about.html">cv</a>, sign up for his <a href="/form.html">newsletter</a>, or <a href="mailto:maxhfowler@gmail.com">send him an email</a>.
 </div>
+
+<!--<div class="about-line">-->
+    <!--Hi,  I am an artist and programmer living in Brooklyn.-->
+    <!--I make open source software and interactive installations.-->
+    <!--On this website you can see some of my work below,-->
+    <!--read my <a href="/about.html">cv</a>, sign up for my <a href="/form.html">newsletter</a>, or <a href="mailto:maxhfowler@gmail.com">send me an email</a>.-->
+<!--</div>-->
 
 <!--<p class="here-are">-->
     <!--Here are some websites I made that are up and running:-->
@@ -106,7 +119,39 @@
     <div class="list-of-projects">
         <div class="simple-wrapper">
             <div class="simple-title">
-                <a href="http://oasisvr.info/">oasis</a>
+                <a href="http://oasisvr.info/">What's On Your Mind?</a>
+            </div>
+            <div class="simple-description">
+                a collection of facebook statuses from the week after November 9th, 2016
+            </div>
+        </div>
+        <div class="simple-wrapper">
+            <div class="simple-title">
+                <a href="http://oasisvr.info/">Open Source Feeds</a>
+            </div>
+            <div class="simple-description">
+                a workshop to make your own feed algorithm
+            </div>
+        </div>
+         <div class="simple-wrapper">
+            <div class="simple-title">
+                <a href="http://oasisvr.info/">Infinite Wishing</a>
+            </div>
+            <div class="simple-description">
+                a hopeful receipt printer
+            </div>
+        </div>
+        <div class="simple-wrapper">
+            <div class="simple-title">
+                <a href="http://oasisvr.info/">Looking Glass</a>
+            </div>
+            <div class="simple-description">
+                a projection onto a broken mirror
+            </div>
+        </div>
+        <div class="simple-wrapper">
+            <div class="simple-title">
+                <a href="http://oasisvr.info/">Oasis</a>
             </div>
             <div class="simple-description">
                 a virtual reality commune only acessible by SSH
@@ -122,7 +167,7 @@
         </div>
         <div class="simple-wrapper">
             <div class="simple-title">
-                <a href="http://abridgedmaps.com/">abridgedmaps.com</a>
+                <a href="http://abridgedmaps.com/">Abridged Maps</a>
             </div>
             <div class="simple-description">
                 a website that strips Google Maps of all natural imagery to reveal concrete poems about the structure of contemporary space
@@ -130,7 +175,7 @@
         </div>
         <div class="simple-wrapper">
             <div class="simple-title">
-                <a href="http://brocascoconut.com/truespeak/">truespeak</a>
+                <a href="http://brocascoconut.com/truespeak/">Truespeak</a>
             </div>
             <div class="simple-description">
                 a thought experiment and functional app that allows you to upload conversations from your text message history to a publicly viewable page on the internet
@@ -138,7 +183,7 @@
         </div>
         <div class="simple-wrapper">
             <div class="simple-title">
-                <a href="http://howdoispeak.com">howdoispeak</a>
+                <a href="http://howdoispeak.com">HowDoISpeak</a>
             </div>
             <div class="simple-description">
                 a website which shows you insights about the way you text by analyzing the frequency of your word usage in your text messages over time
@@ -146,7 +191,7 @@
         </div>
         <div class="simple-wrapper">
             <div class="simple-title">
-                <a href="http://brocascoconut.com/the_capitalist_tshirt/">the capitalist t-shirt</a>
+                <a href="http://brocascoconut.com/the_capitalist_tshirt/">The Capitalist T-Shirt</a>
             </div>
             <div class="simple-description">
                 an e-commerce store which sells t-shirts, framed prints and booty shorts
@@ -154,7 +199,7 @@
         </div>
         <div class="simple-wrapper">
             <div class="simple-title">
-                <a href="http://brocascoconut.com">brocascoconut.com</a>
+                <a href="http://brocascoconut.com">Brocas's Coconut</a>
             </div>
             <div class="simple-description">
                 the landing page for a pseudo-anonymous art collective mailing list curated by me and some of my friends
@@ -162,7 +207,7 @@
         </div>
         <div class="simple-wrapper">
             <div class="simple-title">
-                <a href="http://mhfowler.github.io">css sketchbook</a>
+                <a href="http://mhfowler.github.io">CSS Sketchbook</a>
             </div>
             <div class="simple-description">
                 a working sketchbook I've been using to work through the exercises in the book "The Secrets Of CSS"

@@ -48,11 +48,39 @@
 body {
   font-family: 'Roboto Mono', monospace;
   font-size: 12px;
-  background-image: url("/static/img/diamond.gif");
+  background-image: url("https://78.media.tumblr.com/37816081fb4c15e85596ed7931c6d2e0/tumblr_n6awg7ky2K1tw598eo1_500.jpg");
   background-size: cover; }
 
 .overlaid {
   background-color: white; }
+
+.carousel-focus .img-container {
+  width: 518px;
+  height: 400px;
+  line-height: 400px;
+  text-align: center; }
+
+.carousel-focus img.carousel-thumbnail {
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  margin: auto; }
+
+.carousel-thumbnails {
+  width: 667px;
+  margin: auto; }
+  .carousel-thumbnails .img-container.slick-current img.carousel-thumbnail {
+    opacity: 1; }
+  .carousel-thumbnails img.carousel-thumbnail {
+    opacity: 0.5;
+    height: 80px;
+    vertical-align: middle;
+    padding-right: 1px; }
+    .carousel-thumbnails img.carousel-thumbnail:hover {
+      cursor: pointer; }
+
+.slick-slide {
+  outline: none; }
 
 a.timeline-row {
   display: block;
@@ -182,10 +210,12 @@ body.base-body {
     margin-right: 120px;
     width: 200px;
     height: 350px;
-    margin-bottom: 75px;
-    /*border: 1px solid black;*/
-    /*padding: 20px;*/
-    /*padding-bottom: 30px;*/ }
+    margin-bottom: 75px; }
+    @media screen and (max-width: 575px) {
+      body.base-body .project-wrapper {
+        width: 100%;
+        height: auto;
+        padding-bottom: 15px; } }
   body.base-body .project-image-wrapper {
     overflow: hidden;
     /*padding: 5px;*/
@@ -195,8 +225,11 @@ body.base-body {
   body.base-body .project-image {
     height: 200px;
     width: 200px;
-    background-size: cover;
-    transition: all 0.4s; }
+    background-size: cover; }
+    @media screen and (max-width: 575px) {
+      body.base-body .project-image {
+        width: 100%;
+        height: auto; } }
   body.base-body .portfolio-image-wrapper {
     /*padding: 5px;*/
     /*background-color: lightgray;*/
@@ -267,6 +300,9 @@ body.base-body {
     margin-top: 60px;
     float: left;
     width: 100%; }
+    @media screen and (max-width: 575px) {
+      body.base-body .projects-wrapper {
+        width: 95%; } }
   body.base-body .documentation-wrapper {
     width: 100%;
     max-width: 800px;
@@ -298,7 +334,8 @@ body.base-body {
     margin-top: 100px; }
   body.base-body .simple-title a {
     color: black;
-    text-decoration: underline; }
+    text-decoration: underline;
+    text-transform: lowercase; }
   body.base-body .simple-wrapper {
     margin-top: 25px; }
   body.base-body .simple-description {

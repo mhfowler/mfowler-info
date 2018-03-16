@@ -1,0 +1,380 @@
+
+.simple-site {
+
+    .overlaid {
+        background-color: white;
+    }
+
+    a.timeline-row {
+        display: block;
+        color: black;
+        &:visited {
+            color: black;
+        }
+        &:hover {
+            color: darkgray;
+        }
+    }
+
+    .dropline {
+        background-size: 332px 150px;
+        background-position: 44px;
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 50px;
+        margin: auto;
+    }
+
+    .navbar {
+        font-size: 12px;
+
+        .navlinks {
+            width: 400px;
+        }
+
+        width: 367px;
+
+    }
+
+    body.new-blog-body {
+        .blog-post-title {
+            color: #6801c1;
+        }
+        .doc-wrapper {
+            max-width: 550px;
+        }
+    }
+
+    body.base-body {
+        padding-bottom: 50px;
+        height: 100%;
+        margin: 0px;
+
+        .blog-back-button {
+            margin-bottom: 40px;
+        }
+
+        .blog-sidebar {
+            font-family: 'PT Sans', sans-serif;
+            margin-right: 45px;
+            padding-top: 25px;
+            margin-left: 30px;
+            float: left;
+            @media screen and (max-width: 1000px) {
+                margin-left: 15px;
+            }
+            a {
+                display: block;
+                color: black;
+            }
+        }
+
+        .page-wrapper {
+            margin-left: 10%;
+            margin-top: 0px;
+            max-width: 1000px;
+            width: 100%;
+            @media screen and (max-width: 575px) {
+                margin-left: 10px;
+            }
+        }
+        .navlinks {
+            width: 350px;
+            margin-top: 20px;
+        }
+        .navlinks:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        a {
+            /*color:black;*/
+            color: #6801c1;
+            text-decoration: none;
+            /*padding:5px;*/
+            /*border: 1px solid black;*/
+            /*text-decoration: line-through;*/
+        }
+        .navlink {
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            &.last-navlink {
+                margin-right: 0px;
+            }
+        }
+
+        .navlink a {
+            color: black;
+        }
+        .myname a {
+            color: black;
+            //font-size: 28px;
+        }
+
+        a:hover {
+            /*border:10px solid black;*/
+            /*position:relative;*/
+            /*left: -10px;*/
+            /*top: -10px;*/
+            /*background-color:black;*/
+            /*background-color: #00ffc6;*/
+            /*border-color:red;*/
+            /*border-color: cadetblue;*/
+            /*color:white;*/
+        }
+
+        .content-wrapper {
+            max-width: 100%;
+            margin-bottom: 0px;
+        }
+
+        a.source-link {
+            color: gray;
+            margin-top: 150px;
+        }
+        .sources {
+            margin-top: 25px;
+        }
+
+        img.img {
+            width: 100%;
+            margin-top: 25px;
+        }
+        body {
+            padding-bottom: 75px;
+        }
+
+        .post {
+            margin-bottom: 100px;
+            /*border-bottom: 1px solid gray;*/
+            /*border-right: 1px solid gray;*/
+            padding-right: 100px;
+            padding-bottom: 100px;
+            width: 100%;
+        }
+
+        a.postlink {
+            /*text-decoration:underline;*/
+        }
+
+        .bio-pic {
+            width: 200px;
+            float: left;
+            margin-right: 40px;
+            margin-bottom: 40px;
+        }
+
+        .bio-writeup {
+            float: left;
+            max-width: 500px;
+        }
+
+        .projects-list {
+            margin-top: 60px;
+        }
+
+        .about-line {
+            margin-top: 40px;
+            max-width: 700px;
+        }
+
+        .project-wrapper {
+            float: left;
+            margin-right: 120px;
+            width: 200px;
+            height: 350px;
+            margin-bottom: 75px;
+
+            @media screen and (max-width: 575px) {
+                width: 100%;
+                height: auto;
+                padding-bottom: 15px;
+            }
+        }
+
+        .project-image-wrapper {
+
+            overflow: hidden;
+            /*padding: 5px;*/
+            /*background-color: lightgray;*/
+            margin-bottom: 5px;
+            /*box-shadow: 5px;*/
+        }
+        .project-image {
+            height: 200px;
+            width: 200px;
+            background-size: cover;
+            @media screen and (max-width: 575px) {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .portfolio-image-wrapper {
+            /*padding: 5px;*/
+            /*background-color: lightgray;*/
+            margin-bottom: 5px;
+            float: left;
+            /*box-shadow: 5px;*/
+        }
+        .portfolio-image {
+            width: 100%;
+            max-width: 450px;
+            height: 100%;
+            max-height: 333px;
+            background-size: cover;
+        }
+        .portfolio-description {
+            width: 100%;
+            max-width: 450px;
+            float: left;
+            padding-left: 20px;
+            @media screen and (max-width: 1100px) {
+                padding-left: 5px;
+            }
+            padding-right: 10px;
+        }
+
+        .project-title {
+            font-size: 12px;
+            color: black;
+        }
+
+        .portfolio-title {
+            color: black;
+            font-size: 24px;
+        }
+
+        .project-snippet {
+            margin-top: 10px;
+            //display: none;
+        }
+        .project-tags {
+            color: gray;
+            margin-top: 10px;
+        }
+
+        .note {
+            width: 400px;
+        }
+        .note-wrapper {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .about-wrapper {
+            //margin-top: 60px;
+            margin-top: 30px;
+            //margin-top: 20px;
+        }
+        .about-writeup {
+            float: left;
+            max-width: 500px;
+        }
+
+        .portfolio-item {
+            @include clearfix;
+            border: 1px solid black;
+            padding: 20px;
+            margin-top: 40px;
+            max-width: 950px;
+            width: 100%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            @media screen and (max-width: 1100px) {
+                max-width: 85%;
+                width: 550px;
+            }
+        }
+        .portfolio-tags {
+            color: gray;
+            margin-top: 5px;
+            display: none;
+        }
+        .author {
+            color: gray;
+        }
+
+        .project-description {
+            margin-top: 15px;
+            //display: none;
+        }
+
+        .projects-wrapper {
+            margin-top: 60px;
+            float: left;
+            width: 100%;
+            @media screen and (max-width: 575px) {
+                width: 95%;
+            }
+        }
+
+        .documentation-wrapper {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            height: 100%;
+            padding: 25px;
+            font-family: 'PT Sans', sans-serif;
+            @media screen and (max-width: 800px) {
+                max-width: 85%;
+                padding-left: 15px;
+                margin-left: 0px;
+            }
+        }
+        .documentation-wrapper.blog-wrapper {
+            font-family: "Times New Roman";
+        }
+
+        .doc-image {
+            width: 100%;
+            max-width: 100%;
+        }
+        .doc-image.small-doc-image {
+            max-width: 300px;
+            display: block;
+        }
+        .writeup-wrapper {
+            margin-top: 60px;
+        }
+        .doc-tags {
+            color: gray;
+        }
+
+        .documentation-footer {
+            border-top: 1px solid gray;
+            width: 100%;
+            padding-top: 30px;
+            margin-top: 100px;
+        }
+
+        .simple-title a {
+            color: black;
+            text-decoration: underline;
+            text-transform: lowercase;
+        }
+
+        .simple-wrapper {
+            margin-top: 25px;
+        }
+        .simple-description {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        .simple-list {
+            //margin-top: 20px;
+            max-width: 600px;
+        }
+        .here-are {
+            margin-top: 40px;
+        }
+
+    }
+
+    .looking-glass {
+        .doc-image {
+            max-width: 450px;
+        }
+    }
+}
