@@ -154,8 +154,6 @@ body.base-body {
       display: block;
       color: black; }
   body.base-body .page-wrapper {
-    padding-left: 90px;
-    padding-right: 20px;
     background-size: contain;
     background-color: white;
     margin: auto;
