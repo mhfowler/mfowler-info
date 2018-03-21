@@ -47,15 +47,10 @@
 
 body {
   font-family: 'Roboto Mono', monospace;
-  font-size: 12px;
-  background-size: cover; }
+  font-size: 12px; }
 
 .overlaid {
-  background-color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  background-color: white; }
 
 .simple-title {
   line-height: 22px;

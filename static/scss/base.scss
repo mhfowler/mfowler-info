@@ -72,28 +72,30 @@
 body {
     //font-family: "resistanceregular";
     font-family: 'Roboto Mono', monospace;
-    //background-color: blue;
+    //background-color: #c2c2de;
     //background-color: #d9e2d4;
     //background-color: #efefef;
     // #d9e2d4 light green
     // #8cccb1 turqoise
     // #efefef gray
     font-size: 12px;
+    //background-image: url('/static/img/grid.png');
+    //background-size: 200px 200px;
     //background-image: url('https://78.media.tumblr.com/37816081fb4c15e85596ed7931c6d2e0/tumblr_n6awg7ky2K1tw598eo1_500.jpg');
     //background-image: url('/static/img/diamond.gif');
     //background-image: url('/static/img/triangles.png');
     //background-image: url('/static/img/plant.jpg');
     //background-image: url('/static/img/bp.png');
     //background-size: 400px 400px;
-    background-size: cover;
+    //background-size: cover;
 }
 
 .overlaid {
     background-color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    //padding-left: 20px;
+    //padding-right: 20px;
+    //padding-top: 20px;
+    //padding-bottom: 20px;
     //border: px solid black;
     //border-top: 10px solid black;
 }
