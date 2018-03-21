@@ -79,6 +79,8 @@ body {
     // #8cccb1 turqoise
     // #efefef gray
     font-size: 12px;
+    //background-color: mediumpurple;
+    //background: linear-gradient(white, black);
     //background-image: url('/static/img/grid.png');
     //background-size: 200px 200px;
     //background-color: lightgray;
@@ -88,7 +90,7 @@ body {
     //background-image: url('/static/img/plant.jpg');
     //background-image: url('/static/img/bp.png');
     //background-image: url('/static/img/bptest.png');
-    background-image: url('/static/img/inverted-bp.png');
+    //background-image: url('/static/img/inverted-bp.png');
     background-size: cover;
 }
 
@@ -109,11 +111,11 @@ body {
 }
 
 .overlaid {
-    background-color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    //background-color: white;
+    //padding-left: 20px;
+    //padding-right: 20px;
+    //padding-top: 20px;
+    //padding-bottom: 20px;
     //border: px solid black;
     //border-top: 10px solid black;
 }
@@ -222,7 +224,7 @@ body.new-blog-body {
 }
 
 body.base-body {
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     height: 100%;
     margin: 0px;
 
@@ -247,14 +249,17 @@ body.base-body {
 
     .page-wrapper {
         //border: 1px solid blue;
+        padding-left: 90px;
+        padding-right: 20px;
         //background-image: url('https://78.media.tumblr.com/37816081fb4c15e85596ed7931c6d2e0/tumblr_n6awg7ky2K1tw598eo1_500.jpg');
         background-size: contain;
+        background-color: white;
         margin: auto;
-        margin-top: 0px;
-        max-width: 1000px;
-        //max-width: 800px;
+        //max-width: 1000px;
+        max-width: 750px;
         width: 90%;
         padding-bottom: 70px;
+        min-height: 100%;
         @media screen and (max-width: 575px) {
             //margin-left: 10px;
         }
@@ -375,15 +380,15 @@ body.base-body {
     .project-wrapper {
         float:left;
         //margin-right: 120px;
-        margin-right: 80px;
+        margin-right: 45px;
         width: 200px;
-        height: 350px;
-        margin-bottom: 75px;
+        //height: 350px;
+        margin-bottom: 0px;
 
         @media screen and (max-width: 575px) {
             width: 100%;
             height: auto;
-            padding-bottom:15px;
+            //padding-bottom:15px;
         }
     }
 
@@ -399,9 +404,15 @@ body.base-body {
         height: 200px;
         width: 200px;
         background-size: cover;
+        filter: grayscale(100%);
+        opacity: 0.8;
         @media screen and (max-width: 575px) {
             width: 100%;
             height: auto;
+        }
+        &:hover {
+            opacity: 1;
+          filter: none;
         }
     }
     .portfolio-image-wrapper {
@@ -432,6 +443,7 @@ body.base-body {
     .project-title {
         font-size: 12px;
         color:black;
+        margin-bottom: 20px;
     }
 
     .portfolio-title {
@@ -441,11 +453,14 @@ body.base-body {
 
     .project-snippet {
         margin-top: 10px;
-        //display: none;
+        display: none;
     }
     .project-tags {
         color:gray;
-        margin-top: 10px;
+        display: none;
+        display: none;
+
+        //margin-top: 10px;
     }
 
     .note {
@@ -490,7 +505,9 @@ body.base-body {
     }
 
     .project-description {
-        margin-top: 15px;
+        //display:none;
+        margin-top: 5px;
+        margin-bottom: 35px;
         //display: none;
     }
 
