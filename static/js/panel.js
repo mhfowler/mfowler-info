@@ -6,17 +6,17 @@ $(document).ready(function() {
   //     slidesToShow: 1
   // });
   //
-  $('.iw-focus').slick({
+  $('.carousel-focus').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.iw-carousel',
+    asNavFor: '.carousel-thumbnails'
   });
-  $('.iw-carousel').slick({
+  $('.carousel-thumbnails').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
-    asNavFor: '.iw-focus',
+    asNavFor: '.carousel-focus',
     dots: false,
     focusOnSelect: true,
     arrows: false,
