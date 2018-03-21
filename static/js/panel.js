@@ -26,6 +26,20 @@ $(document).ready(function() {
 
   console.log('++ carousel loaded');
 
+  $('.mood-button').click(function(e) {
+    var imgUrl =  $(this).data('src');
+    if (imgUrl === 'white') {
+      $('body').css('background-image', '');
+    } else {
+      $('body').css('background-image', 'url(' + imgUrl + ')');
+    }
+    if (imgUrl === '/static/img/bp.png') {
+      $('body').css('background-size', '200px 200px')
+    } else {
+      $('body').css('background-size', 'contain')
+    }
+  })
+
 });
 
 
