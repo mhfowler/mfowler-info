@@ -162,7 +162,7 @@ body.base-body {
     padding-bottom: 70px;
     min-height: 100%; }
   body.base-body .navlinks {
-    width: 350px;
+    width: 380px;
     margin-top: 20px; }
   body.base-body .navlinks:after {
     content: "";
@@ -416,3 +416,18 @@ body.base-body {
 
 .looking-glass .doc-image {
   max-width: 450px; }
+
+.about-wrapper li {
+  text-indent: -37px;
+  padding-left: 37px; }
+
+.upper-about:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.right-about {
+  margin-left: 40px; }
+
+div.mini-cv a {
+  color: black; }
