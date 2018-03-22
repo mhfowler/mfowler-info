@@ -170,7 +170,7 @@ body.base-body {
     clear: both; }
   body.base-body a {
     /*color:black;*/
-    color: #6801c1;
+    color: #1724e4;
     text-decoration: none;
     /*padding:5px;*/
     /*border: 1px solid black;*/
@@ -239,7 +239,7 @@ body.base-body {
     margin-top: 60px; }
   body.base-body .about-line {
     margin-top: 40px;
-    max-width: 700px; }
+    max-width: 645px; }
   body.base-body .project-wrapper {
     float: left;
     margin-right: 45px;
@@ -391,7 +391,7 @@ body.base-body {
     max-width: 450px;
     display: block; }
   body.base-body .doc-tags {
-    color: gray; }
+    color: #696969; }
   body.base-body .doc-title {
     margin-bottom: 30px;
     font-decoration: italic; }
