@@ -69,6 +69,15 @@
     pointer-events: none;
 }
 
+#preloadedImages
+{
+    width: 0px;
+    height: 0px;
+    display: inline;
+    background-image: url('/static/img/inverted-bp.png');
+    background-image: url('/static/img/triangles.png');
+}
+
 .base-body.asmr {
     background-color: #c2c2de;
     .projects-wrapper {
