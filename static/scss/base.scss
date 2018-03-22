@@ -72,7 +72,7 @@
 body {
     //font-family: "resistanceregular";
     font-family: 'Roboto Mono', monospace;
-    //background-color: #c2c2de;
+    background-color: #c2c2de;
     //background-color: #d9e2d4;
     //background-color: #efefef;
     // #d9e2d4 light green
@@ -251,7 +251,7 @@ body.base-body {
         //border: 1px solid blue;
         //background-image: url('https://78.media.tumblr.com/37816081fb4c15e85596ed7931c6d2e0/tumblr_n6awg7ky2K1tw598eo1_500.jpg');
         background-size: contain;
-        background-color: white;
+        //background-color: white;
         margin: auto;
         //max-width: 1000px;
         max-width: 750px;
@@ -620,9 +620,24 @@ body.base-body {
 }
 
 .about-wrapper {
+    ul {
+        //padding-left: 0px;
+    }
+    .year {
+        float:left;
+        //margin-right: 15px;
+    }
+    .year-events {
+        float:left;
+    }
+    .year-wrapper {
+        @include clearfix();
+    }
     li {
+        //list-style: none;
         text-indent: -37px;
         padding-left: 37px;
+        //margin-bottom: 8px;
     }
 }
 .upper-about {
@@ -633,7 +648,21 @@ body.base-body {
 }
 
 div.mini-cv {
-    a {
-        color: black;
-    }
+    //a {
+    //    color: black;
+    //}
+}
+
+.left-col-cv {
+    padding-left: 30px;
+    float:left;
+    margin-right: 20px;
+}
+.right-col-cv {
+    float: left;
+    max-width: 70%;
+}
+.year-wrapper {
+    @include clearfix();
+    width: 100%;
 }

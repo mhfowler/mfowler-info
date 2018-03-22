@@ -47,6 +47,7 @@
 
 body {
   font-family: 'Roboto Mono', monospace;
+  background-color: #c2c2de;
   font-size: 12px;
   background-size: cover; }
 
@@ -155,7 +156,6 @@ body.base-body {
       color: black; }
   body.base-body .page-wrapper {
     background-size: contain;
-    background-color: white;
     margin: auto;
     max-width: 750px;
     width: 90%;
@@ -417,6 +417,17 @@ body.base-body {
 .looking-glass .doc-image {
   max-width: 450px; }
 
+.about-wrapper .year {
+  float: left; }
+
+.about-wrapper .year-events {
+  float: left; }
+
+.about-wrapper .year-wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 .about-wrapper li {
   text-indent: -37px;
   padding-left: 37px; }
@@ -429,5 +440,18 @@ body.base-body {
 .right-about {
   margin-left: 40px; }
 
-div.mini-cv a {
-  color: black; }
+.left-col-cv {
+  padding-left: 30px;
+  float: left;
+  margin-right: 20px; }
+
+.right-col-cv {
+  float: left;
+  max-width: 70%; }
+
+.year-wrapper {
+  width: 100%; }
+  .year-wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
