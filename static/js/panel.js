@@ -43,7 +43,7 @@ $(document).ready(function() {
   $('.mood-button').click(function(e) {
     var className =  $(this).data('src');
     var baseBody = $(".base-body");
-    baseBody.removeClass('professional');
+    baseBody.removeClass('standard');
     baseBody.removeClass('asmr');
     baseBody.removeClass('sponsored');
     baseBody.removeClass('test');
