@@ -26,18 +26,30 @@ $(document).ready(function() {
 
   console.log('++ carousel loaded');
 
+  // $('.mood-button').click(function(e) {
+  //   var imgUrl =  $(this).data('src');
+  //   if (imgUrl === 'white') {
+  //     $('body').css('background-image', '');
+  //   } else {
+  //     $('body').css('background-image', 'url(' + imgUrl + ')');
+  //   }
+  //   if (imgUrl === '/static/img/bp.png') {
+  //     $('body').css('background-size', '200px 200px')
+  //   } else {
+  //     $('body').css('background-size', 'contain')
+  //   }
+  // })
+
   $('.mood-button').click(function(e) {
-    var imgUrl =  $(this).data('src');
-    if (imgUrl === 'white') {
-      $('body').css('background-image', '');
-    } else {
-      $('body').css('background-image', 'url(' + imgUrl + ')');
-    }
-    if (imgUrl === '/static/img/bp.png') {
-      $('body').css('background-size', '200px 200px')
-    } else {
-      $('body').css('background-size', 'contain')
-    }
+    var className =  $(this).data('src');
+    var baseBody = $(".base-body");
+    baseBody.removeClass('professional');
+    baseBody.removeClass('asmr');
+    baseBody.removeClass('sponsored');
+    baseBody.removeClass('test');
+    baseBody.addClass(className);
+    $('.mood-button').removeClass('clicked');
+    $(this).addClass('clicked');
   })
 
 });

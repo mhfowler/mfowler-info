@@ -69,10 +69,64 @@
     pointer-events: none;
 }
 
+.base-body.asmr {
+    background-color: #c2c2de;
+    .projects-wrapper {
+        display:none;
+    }
+}
+.base-body.professional {
+    background-color: white;
+    .simple-site {
+        display:none;
+    }
+}
+.base-body.sponsored {
+    background-image: url('/static/img/inverted-bp.png');
+    color:white;
+    .navlink a {
+        color: white;
+    }
+    .simple-title a {
+        color: white;
+    }
+    .myname a {
+        color: white;
+    }
+    .projects-wrapper {
+        display:none;
+    }
+}
+.base-body.test {
+    background-image: url('/static/img/triangles.png');
+    color: red;
+        .navlink a {
+        color: blue;
+    }
+    .simple-title a {
+        color: blue;
+    }
+    .myname a {
+        color: red;
+    }
+    .p5-sketch {
+        display: block;
+    }
+    .projects-wrapper {
+        display:none;
+    }
+}
+.p5-sketch {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+}
+
 body {
     //font-family: "resistanceregular";
     font-family: 'Roboto Mono', monospace;
-    background-color: #c2c2de;
     //background-color: #d9e2d4;
     //background-color: #efefef;
     // #d9e2d4 light green
@@ -95,17 +149,31 @@ body {
 }
 
 .control-panel {
-    display:none;
-    position:absolute;
-    //opacity: 0.2;
-    top: 0px;
-    left: 0px;
-    height: 100%;
+       position: absolute;
+    padding: 20px;
+    padding-bottom: 30px;
+    //border: 1px solid gray;
+    width: 100%;
+    .click-your-mood {
+        float: left;
+          @media screen and (max-width: 800px) {
+            width: 100%;
+        }
+    }
     .mood-button {
         display:block;
-        margin-top: 5px;
+        margin-left: 23px;
+        float:left;
         &:hover {
             cursor: pointer;
+        }
+        &.clicked {
+            font-size: 16px;
+        }
+        @media screen and (max-width: 800px) {
+            margin-right:23px;
+            margin-left: 0px;
+            margin-top:5px;
         }
     }
 }
@@ -196,7 +264,8 @@ a.timeline-row {
     background-position: 44px;
     background-repeat: no-repeat;
     width: 400px;
-    height: 50px;
+    //height: 50px;
+    height: 90px;
     margin: auto;
 }
 
@@ -224,6 +293,7 @@ body.new-blog-body {
 }
 
 body.base-body {
+    transition: all 0.4s;
     padding-bottom: 0px;
     height: 100%;
     margin: 0px;
@@ -513,7 +583,7 @@ body.base-body {
 
     .projects-wrapper {
         @include clearfix;
-        margin-top: 50px;
+        margin-top: 30px;
         float:left;
         width: 100%;
         @media screen and (max-width: 575px) {
