@@ -107,7 +107,7 @@ body {
   width: 100%; }
   .control-panel .click-your-mood {
     float: left; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 600px) {
       .control-panel .click-your-mood {
         width: 100%; } }
   .control-panel .mood-button {
@@ -118,7 +118,7 @@ body {
       cursor: pointer; }
     .control-panel .mood-button.clicked {
       font-size: 16px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 600px) {
       .control-panel .mood-button {
         margin-right: 23px;
         margin-left: 0px;

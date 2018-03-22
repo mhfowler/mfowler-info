@@ -165,7 +165,7 @@ body {
     width: 100%;
     .click-your-mood {
         float: left;
-          @media screen and (max-width: 800px) {
+          @media screen and (max-width: 600px) {
             width: 100%;
         }
     }
@@ -179,7 +179,7 @@ body {
         &.clicked {
             font-size: 16px;
         }
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 600px) {
             margin-right:23px;
             margin-left: 0px;
             margin-top:5px;
