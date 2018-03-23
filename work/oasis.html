@@ -15,12 +15,19 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="/static/lib/p5.dom.js"></script>
 
     <!--jquery-->
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
     <!--slick-->
     <link rel="stylesheet" type="text/css" href="/static/slick/slick.css"/>
@@ -41,10 +48,12 @@
     <title>mfowler.info</title>
 </head>
 <body class="base-body standard">
+<div class="body-wrapper">
 
 <div class="control-panel overlaid">
     <div class="click-your-mood"> click your mood: </div>
     <a class="mood-button clicked" data-src="standard">standard</a>
+    <a class="mood-button" data-src="professional">professional</a>
     <a class="mood-button" data-src="asmr">asmr</a>
     <a class="mood-button" data-src="sponsored">sponsored</a>
     <a class="mood-button" data-src="test">test</a>
@@ -54,6 +63,15 @@
     <!--<a class="mood-button" data-src="/static/img/plant.jpg">ok</a>-->
     <!--<a class="mood-button" data-src="/static/img/bp.png">sponsored</a>-->
 </div>
+
+<div class="slider-wrapper">
+    <p>
+      <label for="amount">volume:</label>
+      <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+    </p>
+    <div id="slider-vertical" style="height:200px;"></div>
+</div>
+
 <div class="p5-sketch" id="p5sketch">
 </div>
 
@@ -194,6 +212,6 @@
 </div>
 
 
-
+</div>
 </body>
 </html>

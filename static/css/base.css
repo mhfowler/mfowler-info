@@ -53,6 +53,8 @@
   background-image: url("/static/img/triangles.png"); }
 
 .base-body.asmr {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
   background-color: #c2c2de; }
   .base-body.asmr .projects-wrapper {
     display: none; }
@@ -61,9 +63,19 @@
   background-color: white; }
   .base-body.standard .simple-site {
     display: none; }
+  .base-body.standard a {
+    color: #ff00ae; }
+
+.base-body.professional {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px; }
+  .base-body.professional .simple-site {
+    display: none; }
 
 .base-body.sponsored {
   background-image: url("/static/img/inverted-bp.png");
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
   color: white; }
   .base-body.sponsored .navlink a {
     color: white; }
@@ -76,7 +88,9 @@
 
 .base-body.test {
   background-image: url("/static/img/triangles.png");
-  color: red; }
+  font-family: 'Roboto Mono', monospace;
+  color: red;
+  font-size: 28px; }
   .base-body.test .navlink a {
     color: blue; }
   .base-body.test .simple-title a {
@@ -95,14 +109,32 @@
   left: 0px;
   z-index: -2; }
 
+.slider-wrapper {
+  display: none;
+  position: absolute;
+  top: 10%;
+  font-size: 16px;
+  left: 20px;
+  width: 169px; }
+  .slider-wrapper input {
+    width: 40px; }
+  .slider-wrapper .ui-slider {
+    margin: auto; }
+  .slider-wrapper .ui-slider-handle {
+    outline: 0; }
+  @media screen and (max-width: 1000px) {
+    .slider-wrapper {
+      display: none; } }
+
 body {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 12px;
+  font-family: 'Times New Roman';
+  font-size: 16px;
   background-size: cover; }
 
 .control-panel {
   position: absolute;
   padding: 20px;
+  top: 0px;
   padding-bottom: 30px;
   width: 100%; }
   .control-panel .click-your-mood {
@@ -113,7 +145,9 @@ body {
   .control-panel .mood-button {
     display: block;
     margin-left: 23px;
-    float: left; }
+    margin-bottom: 5px;
+    float: left;
+    font-size: 12px; }
     .control-panel .mood-button:hover {
       cursor: pointer; }
     .control-panel .mood-button.clicked {
@@ -179,18 +213,18 @@ a.timeline-row {
   background-position: 44px;
   background-repeat: no-repeat;
   width: 400px;
-  height: 90px;
+  height: 50px;
   margin: auto; }
 
 .navbar {
-  font-size: 12px;
-  width: 367px; }
+  margin-top: 3em;
+  width: 100%; }
   .navbar:after {
     content: "";
     display: table;
     clear: both; }
   .navbar .navlinks {
-    width: 400px; }
+    width: 100%; }
 
 body.new-blog-body .blog-post-title {
   color: #6801c1; }
@@ -224,7 +258,7 @@ body.base-body {
     padding-bottom: 70px;
     min-height: 100%; }
   body.base-body .navlinks {
-    width: 380px;
+    width: 100%;
     margin-top: 20px; }
   body.base-body .navlinks:after {
     content: "";
@@ -352,7 +386,6 @@ body.base-body {
       body.base-body .portfolio-description {
         padding-left: 5px; } }
   body.base-body .project-title {
-    font-size: 12px;
     color: black;
     margin-bottom: 20px; }
   body.base-body .portfolio-title {

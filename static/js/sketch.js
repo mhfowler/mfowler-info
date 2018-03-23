@@ -18,6 +18,7 @@ function randInt(min, max) {
 // }
 
 
+var img;
 var length_multiple = 4;
 var xspacing = 16;    // Distance between each horizontal location
 var w;                // Width of entire wave
@@ -223,6 +224,7 @@ function updateFromMouse() {
 
 
 function setup() {
+    img = loadImage('/static/img/gradient.png');
     // textSize(32);
     // textAlign(CENTER);
     // textFont("Avenir");
@@ -263,4 +265,22 @@ function setup() {
 function draw() {
     drawFunction();
 
+    // image(img, 0, 0);
+    // var mX = mouseX;
+    // var mY = mouseY;
+    // if (mX !== Infinity && mY !== Infinity) {
+    //   var xLoc = map(mX, 0, width, 0, 100);
+    //   var yLoc = map(mY, 0, height, 0, 100);
+    //   console.log(xLoc);
+    //   console.log(yLoc);
+    //   var c = get(xLoc, yLoc);
+    //   var links = selectAll('a');
+    //   // links.style('color', 'red');
+    //   var col = color(c[0], c[1], c[2]);
+    //   var hx = "#" + hex(c[0], 2) + hex(c[1], 2) + hex(c[2], 2);
+    //   console.log(hx);
+    //   for (var i = 0; i < links.length; i++) {
+    //     links[i].style('color', hx)
+    //   }
+    // }
 }
